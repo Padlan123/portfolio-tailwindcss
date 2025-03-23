@@ -21,9 +21,6 @@
 
 .container {
   width: 100%;
-  @media (width >= 344px) {
-    @apply py-4;
-  }
   @media (width >= 1320px) {
     max-width: 1320px;
   }
@@ -43,9 +40,6 @@
 
 .container-help {
   width: 100%;
-  @media (width >= 344px) {
-    @apply py-4 px-4;
-  }
   @media (width >= 1320px) {
     max-width: 1320px;
   }
