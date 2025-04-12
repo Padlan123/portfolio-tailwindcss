@@ -4,14 +4,13 @@
   :root, :host {
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-200: oklch(0.924 0.12 95.746);
+    --color-red-300: oklch(0.808 0.114 19.571);
+    --color-red-400: oklch(0.704 0.191 22.216);
+    --color-red-500: oklch(0.637 0.237 25.331);
     --color-yellow-500: oklch(0.795 0.184 86.047);
-    --color-teal-200: oklch(0.91 0.096 180.426);
     --color-sky-500: oklch(0.685 0.169 237.323);
-    --color-pink-500: oklch(0.656 0.241 354.308);
     --color-slate-200: oklch(0.929 0.013 255.508);
     --color-slate-300: oklch(0.869 0.022 252.894);
     --color-slate-500: oklch(0.554 0.046 257.417);
@@ -457,9 +456,6 @@
   .overflow-hidden {
     overflow: hidden;
   }
-  .scroll-smooth {
-    scroll-behavior: smooth;
-  }
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
@@ -575,9 +571,6 @@
   .font-display {
     font-family: var(--font-display);
   }
-  .font-serif {
-    font-family: var(--font-serif);
-  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -589,10 +582,6 @@
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-  .text-5xl {
-    font-size: var(--text-5xl);
-    line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
   .text-base {
     font-size: var(--text-base);
@@ -637,11 +626,17 @@
   .text-dark {
     color: var(--color-dark);
   }
-  .text-pink-500 {
-    color: var(--color-pink-500);
-  }
   .text-primary {
     color: var(--color-primary);
+  }
+  .text-red-300 {
+    color: var(--color-red-300);
+  }
+  .text-red-400 {
+    color: var(--color-red-400);
+  }
+  .text-red-500 {
+    color: var(--color-red-500);
   }
   .text-secondary {
     color: var(--color-secondary);
@@ -739,13 +734,6 @@
       }
     }
   }
-  .hover\:bg-amber-200 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-amber-200);
-      }
-    }
-  }
   .hover\:bg-gray-100 {
     &:hover {
       @media (hover: hover) {
@@ -760,31 +748,10 @@
       }
     }
   }
-  .hover\:text-amber-200 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-amber-200);
-      }
-    }
-  }
   .hover\:text-primary {
     &:hover {
       @media (hover: hover) {
         color: var(--color-primary);
-      }
-    }
-  }
-  .hover\:text-secondary {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-secondary);
-      }
-    }
-  }
-  .hover\:text-teal-200 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-teal-200);
       }
     }
   }
