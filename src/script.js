@@ -55,3 +55,27 @@ document.addEventListener("DOMContentLoaded", () => {
     htmlElement.setAttribute("data-theme", newTheme); // Terapkan tema ke atribut data-theme
   });
 });
+
+// smooth scrolling
+
+const allLinks = document.querySelectorAll('a[href^="#"]');
+
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+
+    //scroll back to the top
+    if (href === "#")
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+
+    //  scroll other links
+    if (href !== "#" && href.startsWith("#")) {
+      const sectionEl = document.querySelector(href);
+      sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
